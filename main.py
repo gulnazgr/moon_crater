@@ -1,4 +1,5 @@
 def calculate(matrix: list) -> int:
+    """Принимает двумерный список с контентом файла и возвращает числовой ответ..."""
     # счётчик краторов
     count = 0
     m = matrix
@@ -27,8 +28,9 @@ def calculate(matrix: list) -> int:
 
 
 def main() -> None:
+    """Главная функция,читает файл,преобразует содержимое файла в матрицу..."""
     # загрузить файл
-    with open('matrix.txt', 'rt') as fd:
+    with open("matrix.txt", "rt") as fd:
         matrix = []
 
         # преобразовываем строки в списки и добавляем в матрицу
